@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="./src/img/GLH-logo-h 1.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GL HOLDING</title>
+
+  <link rel="stylesheet" href="./src/css/styles.css" />
+  <link rel="stylesheet" href="./src/css/fontawesome.css" />
+  <script src="./src/js/all.min.js"></script>
+</head>
+
+<body>
+  <header class="navbar">
+    <img class="logo" alt="Logo GL Holding" src="./src/img/gl-holding-logo-branca.svg" />
+    <input type="checkbox" id="toggler">
+    <label class="home" for="toggler"><i class="fa-solid fa-bars"></i></label>
+    <nav class="menu home">
+      <ul class="list-home">
+        <li><a href="/">Início</a></li>
+        <li><a href="/quem-somos.html">Quem Somos</a></li>
+        <li><a href="/projetos.html">Projetos</a></li>
+        <li><a href="/servicos.html">Serviços</a></li>
+        <li><a href="/contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="container-dhl">
+    <div class="top-banner-dhl">
+      <img src="./src/img/dhl/Logo-DHL.png" alt="Logo DHL">
+    </div>
+    <div class="contents01">
+      <h2>Aluguel de máquinas e equipamentos para suas operações</h2>
+      <h3>Locamos as máquinas que você precisa com responsabilidade e economia</h3>
+      <a href="#">Faça um orçamento</a>
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img src="../src/img/dhl/img-01.png" alt="Foto maquina 01" />
+          </div>
+          <div class="slide">
+            <img src="../src/img/dhl/img-02.png" alt="Foto maquina 02" />
+          </div>
+          <div class="slide">
+            <img src="../src/img/dhl/img-03.png" alt="Foto maquina 03" />
+          </div>
+          <div class="slide">
+            <img src="../src/img/dhl/img-04.png" alt="Foto maquina 04" />
+          </div>
+          <div class="slide">
+            <img src="../src/img/dhl/img-05.png" alt="Foto maquina 05" />
+          </div>
+          <div class="slide">
+            <img src="../src/img/dhl/img-06.png" alt="Foto maquina 06" />
+          </div>
+          <div class="slide">
+            <img src="../src/img/dhl/img-07.png" alt="Foto maquina 07" />
+          </div>
+          <div class="slide">
+            <img src="../src/img/dhl/img-01.png" alt="Foto maquina 01" />
+          </div>
+          <div class="slide">
+            <img src="../src/img/dhl/img-02.png" alt="Foto maquina 02" />
+          </div>
+          <div class="slide">
+            <img src="../src/img/dhl/img-03.png" alt="Foto maquina 03" />
+          </div>
+          <div class="slide">
+            <img src="../src/img/dhl/img-04.png" alt="Foto maquina 04" />
+          </div>
+          <div class="slide">
+            <img src="../src/img/dhl/img-05.png" alt="Foto maquina 05" />
+          </div>
+          <div class="slide">
+            <img src="../src/img/dhl/img-06.png" alt="Foto maquina 06" />
+          </div>
+          <div class="slide">
+            <img src="../src/img/dhl/img-07.png" alt="Foto maquina 07" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contents02">
+      <div class="background-green">
+        <p>Com mais de 40 equipamentos e 5 caminhões, a DHL atua no
+          ramo de locação de máquinas e prestação de serviço, seu hall
+          de maior potencial é no ramo de máquinas pesadas. Recentemente
+          abriu uma ramificação para o Agronegócio, onde conta con a aquisição
+          de 1850Ha para o início da pecuária e piscicultura.</p>
+      </div>
+    </div>
+    <div class="budget">
+      <div>
+        <h2>Insira ao lado seus dados e entraremos em contato</h2>
+        <p>Solicite um orçamento e nossa equipe entrará em contato</p>
+      </div>
+      <form onsubmit="budget(event)" method="post">
+        <h3>Solicite um orçamento</h3>
+        <input name="name" type="text" placeholder="Seu nome">
+        <input name="enterprise" type="text" placeholder="Nome da empresa">
+        <div class="input-box">
+          <input name="phoneNumber" type="tel" placeholder="Telefone">
+          <input name="email" type="email" placeholder="E-mail">
+        </div>
+        <input name="comments" type="text" placeholder="Observações">
+        <h4>De qual equipamento você precisa?</h4>
+        <div class="itens">
+          <div>
+            <input name="equipment" id="item01" type="checkbox" value="Caminhão basculante">
+            <label for="item01">Caminhão basculante</label>
+          </div>
+          <div>
+            <input name="equipment" id="item02" type="checkbox" value="Caminhão-pipa">
+            <label for="item02">Caminhão-pipa</label>
+          </div>
+          <div>
+            <input name="equipment" id="item03" type="checkbox" value="Caminhão prancha">
+            <label for="item03">Caminhão prancha</label>
+          </div>
+          <div>
+            <input name="equipment" id="item04" type="checkbox" value="Caminhão munck">
+            <label for="item04">Caminhão munck</label>
+          </div>
+          <div>
+            <input name="equipment" id="item05" type="checkbox" value="Mini Carregadeira">
+            <label for="item05">Mini Carregadeira</label>
+          </div>
+          <div>
+            <input name="equipment" id="item06" type="checkbox" value="Mini rolo compactador">
+            <label for="item06">Mini rolo compactador</label>
+          </div>
+          <div>
+            <input name="equipment" id="item07" type="checkbox" value="Retroescavadeira">
+            <label for="item07">Retroescavadeira</label>
+          </div>
+          <div>
+            <input name="equipment" id="item08" type="checkbox" value="Trator de esteira">
+            <label for="item08">Trator de esteira</label>
+          </div>
+          <div>
+            <input name="equipment" id="item09" type="checkbox" value="Trator de pneu">
+            <label for="item09">Trator de pneu</label>
+          </div>
+          <div>
+            <input name="equipment" id="item10" type="checkbox" value="Caminhão-pipa">
+            <label for="item10">Caminhão-pipa</label>
+          </div>
+          <div>
+            <input name="equipment" id="item11" type="checkbox" value="Escavadeira Hidráulica">
+            <label for="item11">Escavadeira Hidráulica</label>
+          </div>
+          <div>
+            <input name="equipment" id="item12" type="checkbox" value="Mini escavadeira">
+            <label for="item12">Mini escavadeira</label>
+          </div>
+          <div>
+            <input name="equipment" id="item13" type="checkbox" value="Motoniveladora">
+            <label for="item13">Motoniveladora</label>
+          </div>
+          <div>
+            <input name="equipment" id="item14" type="checkbox" value="Rolo compactador">
+            <label for="item14">Rolo compactador</label>
+          </div>
+          <div>
+            <input name="equipment" id="item15" type="checkbox" value="Pá carregadeira">
+            <label for="item15">Pá carregadeira</label>
+          </div>
+        </div>
+        <h4>Por quanto tempo?</h4>
+        <div class="time-radio">
+          <div>
+            <input name="time" id="week" type="radio" value="Semanal">
+            <label for="week">Semanal</label>
+          </div>
+          <div>
+            <input name="time" id="month" type="radio" value="Mensal">
+            <label for="month">Mensal</label>
+          </div>
+          <div>
+            <input name="time" id="year" type="radio" value="Anual">
+            <label for="year">Anual</label>
+          </div>
+        </div>
+        <div class="input-box2">
+          <button type="submit"><img alt="paper-plane" src="./src/img/dhl/paper-plane.png"> Solicitar</button>
+          <p class="errors"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container-logo">
+      <img class="logo" alt="Logo GL Holding" src="./src/img/GLH-logo-h1.svg" />
+      <div class="menu-footer">
+        <h3>Início</h3>
+        <a href="/">Página Inicial</a>
+        <a href="/contato.html">Contato</a>
+        <a href="/parceiros.html">Parceiros</a>
+        <a href="/blog.html">Blog</a>
+      </div>
+      <div class="menu-footer">
+        <h3>Sobre Nós</h3>
+        <a href="/quem-somos.html">Quem somos</a>
+        <a href="/projetos.html">Projetos</a>
+        <a href="/servicos.html">Serviços</a>
+      </div>
+      <div class="menu-footer">
+        <h3>Contatos</h3>
+        <div>
+          <i class="fa fa-phone fa-2x"></i>
+          <p>(99) 3504-1790</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope fa-2x"></i>
+          <p>comercial@gnflorestal.com.br</p>
+        </div>
+        <div>
+          <i class="fa fa-map-marker-alt fa-2x"></i>
+          <p>
+            Matriz: Rua Amazonas, 478<br />
+            Bairro Nova Imperatriz<br />
+            Imperatriz - MA
+          </p>
+        </div>
+      </div>
+      <div class="email">
+        <form onsubmit="contactEmail(event)" method="post">
+          <h3>Deixe um contato</h3>
+          <div>
+            <input type="email" placeholder="Seu e-mail aqui" />
+            <button type="submit">Enviar</button>
+          </div>
+          <p class="email-error"></p>
+        </form>
+      </div>
+    </div>
+    <div class="container-politics">
+      <p>Direitos Reservados © 2022 Grupo GL Holding</p>
+      <div>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <p>Termos e Serviços</p>
+      <p>Política de Privacidade</p>
+    </div>
+  </footer>
+
+  <script src="./src/js/script.js"></script>
+  <script src="./src/js/script-slider.js"></script>
+  <script src="./src/js/script-submit-budget.js"></script>
+</body>
+
+</html>

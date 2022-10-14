@@ -46,6 +46,8 @@ const input = document.querySelectorAll('.slider input');
 
 input.forEach((item, key) => {
   item.onclick = () => {
+    console.log("🚀 ~ file: script-slider.js ~ line 48 ~ input.forEach ~ item", item)
+    
     if (item.checked) {
       for (let i = 0; i < input.length; i++) {
         const transform = i * percent;

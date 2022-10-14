@@ -8,7 +8,7 @@ const contactEmail = async (event) => {
     sliderContent.style.visibility = 'visible';
     sliderContent.innerHTML = `<span>Digite um email!<span/>`;
   } else {
-    await fetch('http://localhost:3000/contato', {
+    await fetch('http://localhost:1337/api/messages', {
       method: 'POST',
       headers: { 'Content-type': 'application/json; charset=UTF-8' },
       body: JSON.stringify({ email }),

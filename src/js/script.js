@@ -1,5 +1,6 @@
 const allItens = document.querySelectorAll('.item');
 const itens = document.querySelector('.itens');
+const body = document.querySelector('body');
 
 itens.onclick = (e) => {
   if (e) {
@@ -13,9 +14,11 @@ itens.onmousemove = (event) => {
   if (event.buttons) {
     event.preventDefault();
     itens.style.cursor = 'move';
-    allItens.forEach((item) => {
-      item.style.pointerEvents = 'none';
-    });
+    if(body.clientWidth > 1320){
+       allItens.forEach((item) => {
+        item.style.pointerEvents = 'none';
+      });
+    }
     if (event.movementX < 0) {
       event.target.scrollBy(30, 0);
     } else if (event.movementX > 0) {

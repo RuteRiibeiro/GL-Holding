@@ -155,7 +155,6 @@ body {
   padding: 33px;
   align-items: flex-end;
   border-radius: 11px;
-
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -1480,7 +1479,422 @@ body {
   margin-top: 158px;
 }
 
+.top-banner-bioenergia {
+  background: url('../img/floresta.png');
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 0;
+  top: -184px;
+  margin-bottom: -184px;
+  height: 917px;
+  width: 100%;
+  z-index: -2;
+}
 
+.top-banner-bioenergia .background-green {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: #21372bde;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.top-banner-bioenergia .background-green h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  color: #94C11F;
+  width: 302px;
+  margin-left: 251px;
+  position: relative;
+  bottom: -116px;
+}
+
+.top-banner-bioenergia .background-green img {
+  margin-left: 132px;
+}
+
+.container-bioenergia .contents01 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 865px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-bioenergia .contents01 h2 {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 77px;
+  color: #21372B;
+  margin-bottom: 21px;
+}
+
+.container-bioenergia .contents01 h3 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #21372B;
+  margin-bottom: 125px;
+}
+
+.container-bioenergia .contents01 p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: justify;
+  width: 413px;
+  color: #000000;
+  margin-left: 64px;
+}
+
+.container-bioenergia .contents01>div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 87px;
+}
+
+.container-bioenergia .contents01 div div {
+  width: 611px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-bioenergia .contents02 {
+  height: 711px;
+  background: url('../img/bioenergia/background-01.png');
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 0;
+  width: 100%;
+  z-index: -2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-bioenergia .contents02 h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 1170px;
+}
+
+.container-bioenergia .contents03 {
+  height: 804px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 81px;
+}
+
+.container-bioenergia .contents03 img,
+.container-bioenergia .contents03 p {
+  width: 685px;
+  height: 527px;
+}
+
+.container-bioenergia .contents03 p {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: justify;
+  color: #000000;
+}
+
+.top-banner-dhl {
+  background: url('../img/dhl/Banner-da-página-dhl.png');
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 0;
+  top: -184px;
+  margin-bottom: -184px;
+  width: 100%;
+  height: 917px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  z-index: -2;
+  padding: 0 193px 156px 0;
+}
+
+.container-dhl .contents01 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-dhl .contents01 h2 {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+  color: #000000;
+  max-width: 1159px;
+  margin-top: 147px;
+}
+
+.container-dhl .contents01 h3 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #000000;
+  max-width: 822px;
+  margin: 33px 0 46px 0;
+}
+
+.container-dhl .contents01 a {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFFFFF;
+  background: #56AB2F;
+  border-radius: 55.5px;
+  padding: 25px 40px;
+  margin-bottom: 137px;
+}
+
+.container-dhl .contents01 div {
+  display: flex;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-500px * 7))
+  }
+}
+
+.container-dhl .contents01 .slider {
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.container-dhl .contents01 .slider::before,
+.container-dhl .contents01 .slider::after {
+  content: "";
+  height: 375px;
+  position: absolute;
+  width: 500px;
+  z-index: 2;
+}
+
+.container-dhl .contents01 .slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.container-dhl .contents01 .slider::before {
+  left: 0;
+  top: 0;
+}
+
+.container-dhl .contents01 .slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(500px * 14);
+}
+
+.container-dhl .contents01 .slider img {
+  height: 375px;
+  width: 500px;
+}
+
+.container-dhl .contents02 {
+  background: url('../img/dhl/maquina.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 0;
+  height: 528px;
+  width: 100%;
+  z-index: -1;
+}
+
+.container-dhl .contents02 .background-green {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: rgba(86, 171, 47, 0.9);
+  align-items: center;
+  justify-content: center;
+}
+
+.container-dhl .contents02 .background-green p {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #FFFFFF;
+  max-width: 1091px;
+}
+
+.container-dhl .budget {
+  height: 1208px;
+  display: grid;
+  grid-template-columns: 527px 534px;
+  gap: 220px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-dhl .budget h2 {
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 67px;
+  letter-spacing: -0.015em;
+  color: #000000;
+}
+
+.container-dhl .budget h3 {
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 35px;
+  color: #000000;
+}
+
+.container-dhl .budget h4 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-top: 38px;
+}
+
+.container-dhl .budget p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.015em;
+  color: #5B5B5B;
+}
+
+.container-dhl .budget form .input-box {
+  display: grid;
+  grid-template-columns: 1fr 315px;
+  justify-content: space-between;
+  gap: 19px;
+}
+
+.container-dhl .budget input {
+  width: 100%;
+  height: 51px;
+  left: 1016px;
+  top: 1711px;
+  background: none;
+  border: 2px solid #5B5B5B;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #B3B3B3;
+  padding: 11px 18px;
+  margin: 9.5px 0;
+}
+
+.container-dhl .budget button {
+  display: flex;
+  width: 193px;
+  height: 66px;
+  margin-top: 54px;
+  background: #56AB2F;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 35px;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  gap: 8px;
+}
+
+.container-dhl .budget form .input-box2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-dhl .budget form .input-box2 .errors {
+  display: flex;
+  visibility: hidden;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: none;
+  margin-top: 30px;
+  width: 295px;
+  border-radius: 10px;
+  border-color: #f5c6cb;
+  background-color: #f8d7da;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.container-dhl .budget form .input-box2 .errors span {
+  color: #721c24;
+  border-bottom: 1px solid #f5c6cb;
+  width: 100%;
+  font-size: 13px;
+  padding: 8px;
+  margin: 0;
+}
+
+.container-dhl .budget .itens {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  /* flex-direction: column; */
+  max-height: 280px;
+  width: 540px;
+  margin-top: 27px;
+  justify-content: space-between;
+}
+
+.container-dhl .budget .itens div {
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  align-items: center;
+  gap: 9px;
+}
+
+.container-dhl .budget .itens input,
+.container-dhl .budget .time-radio input {
+  width: 14px;
+  height: 14px;
+  background: #5B5B5B;
+}
+
+.container-dhl .budget .itens label,
+.container-dhl .budget .time-radio label {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #5B5B5B;
+}
+
+.container-dhl .budget .time-radio {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+}
 
 /* --- footer --- */
 
@@ -1638,8 +2052,11 @@ body {
   }
 
   .navbar {
+    position: relative;
     padding: 25px;
     height: 100%;
+    margin-bottom: -30px;
+    top: 0;
     justify-content: space-around;
   }
 
@@ -2283,6 +2700,102 @@ body {
     margin-top: 40px;
   }
 
+  .top-banner-bioenergia .background-green {
+    align-items: center;
+  }
+
+  .top-banner-bioenergia .background-green h2 {
+    font-size: 48px;
+    width: 302px;
+    margin-left: 40px;
+  }
+
+  .top-banner-bioenergia .background-green img {
+    margin-left: 0;
+  }
+
+  .container-bioenergia .contents01 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-bioenergia .contents01 h2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 44px;
+    line-height: 57px;
+    margin: 21px 0;
+    text-align: center;
+  }
+
+  .container-bioenergia .contents01 h3 {
+    font-size: 30px;
+    line-height: 48px;
+    margin-bottom: 85px;
+    padding: 29px;
+  }
+
+  .container-bioenergia .contents01 p {
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  .container-bioenergia .contents01>div {
+    display: flex;
+    flex-direction: column;
+    gap: 87px;
+    margin-bottom: 87px;
+  }
+
+  .container-bioenergia .contents01 div div {
+    width: 311px;
+    display: flex;
+    align-items: center;
+  }
+
+  .container-bioenergia .contents01 div div img {
+    width: 60px;
+    display: flex;
+    align-items: center;
+  }
+
+  .container-bioenergia .contents02 {
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .container-bioenergia .contents02 h2 {
+    font-size: 28px;
+    line-height: 38px;
+    width: 100%;
+    padding: 29px;
+  }
+
+  .container-bioenergia .contents03 {
+    padding-top: 29px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+  }
+
+  .container-bioenergia .contents03 img {
+    width: 100vw;
+    height: calc((100vw - 58px) * 0.7693);
+    padding: 0 29px;
+  }
+
+  .container-bioenergia .contents03 p {
+    padding: 0 29px;
+    width: 100vw;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
   /* --- footer --- */
 
   .footer {
@@ -2908,6 +3421,59 @@ body {
 
   .blog-news a {
     margin-top: 40px;
+  }
+
+  .top-banner-bioenergia {
+    background: url('../img/floresta.png');
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    top: -184px;
+    margin-bottom: -184px;
+    height: 917px;
+    width: 100%;
+    z-index: -2;
+  }
+
+  .top-banner-bioenergia .background-green h2 {
+    font-size: 48px;
+    width: 302px;
+    margin-left: 251px;
+  }
+
+  .top-banner-bioenergia .background-green img {
+    margin-left: 132px;
+  }
+
+  .container-bioenergia .contents01 h2 {
+    font-size: 54px;
+  }
+
+  .container-bioenergia .contents01 h3 {
+    font-size: 30px;
+    margin-bottom: 125px;
+  }
+
+  .container-bioenergia .contents01 p {
+    font-size: 22px;
+    width: 313px;
+  }
+
+  .container-bioenergia .contents01>div {
+    gap: 20px;
+  }
+
+  .container-bioenergia .contents01 div div img {
+    width: 90px;
+    display: flex;
+    align-items: center;
+  }
+
+  .container-bioenergia .contents03 img,
+  .container-bioenergia .contents03 p {
+    width: 585px;
+    height: 450px;
   }
 
   /* --- footer --- */

@@ -4,7 +4,7 @@ const contact = async (event) => {
 
   let name = event.target[0].value;
   if (name) name = String(name[0].toUpperCase() + name.substr(1).toLowerCase());
-  const phoneNumber = Number(event.target[1].value);
+  const phoneNumber = String(event.target[1].value);
   const email = String(event.target[2].value);
   const subject = String(event.target[3].value);
   const message = String(event.target[4].value);
@@ -13,10 +13,12 @@ const contact = async (event) => {
     sliderContent.style.visibility = 'visible';
     sliderContent.innerHTML = `<span>Preencha todos os campos!<span/>`;
   } else {
-    await fetch('http://localhost:3000/mensagem', {
+    await fetch('http://localhost:1337/api/messages', {
       method: 'POST',
       headers: { 'Content-type': 'application/json; charset=UTF-8' },
-      body: JSON.stringify({ name, phoneNumber, email, subject, message }),
+      body: JSON.stringify({
+        data: { name, phoneNumber, email, subject, message },
+      }),
     })
       .then((response) => response.json())
       .then((data) => {
@@ -38,8 +40,6 @@ const contact = async (event) => {
           }
         }
       })
-      .catch(() =>
-        alert('Aconteceu um erro no servidor, tente novamente mais tarde!')
-      );
+      .catch(() => alert('Aconteceu um erro no servidor, tente novamente mais tarde!'));
   }
 };

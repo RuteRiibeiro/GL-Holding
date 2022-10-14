@@ -1,182 +1,184 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="icon" href="./src/img/GLH-logo-h 1.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GL HOLDING</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="./src/img/GLH-logo-h 1.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GL HOLDING</title>
 
-    <link rel="stylesheet" href="./src/css/styles.css" />
-    <link rel="stylesheet" href="./src/css/fontawesome.css" />
-    <script src="./src/js/all.min.js"></script>
-  </head>
+  <link rel="stylesheet" href="./src/css/styles.css" />
+  <link rel="stylesheet" href="./src/css/fontawesome.css" />
+  <script src="./src/js/all.min.js"></script>
+</head>
 
-  <body>
-    <header class="navbar">
-      <img class="logo" alt="Logo GL Holding" src="./src/img/gl-holding-logo-colorida.svg" />
-      <input type="checkbox" id="toggler">
-      <label for="toggler"><i class="fa-solid fa-bars"></i></label>
-      <nav class="menu">
-        <ul class="list">
-          <li><a href="/">Início</a></li>
-          <li><a href="/quem-somos.html">Quem Somos</a></li>
-          <li><a href="/projetos.html">Projetos</a></li>
-          <li><a href="/servicos.html">Serviços</a></li>
-          <li><a class="active" href="/contato.html">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
+<body>
+  <header class="navbar">
+    <img class="logo" alt="Logo GL Holding" src="./src/img/gl-holding-logo-colorida.svg" />
+    <input type="checkbox" id="toggler">
+    <label for="toggler"><i class="fa-solid fa-bars"></i></label>
+    <nav class="menu">
+      <ul class="list">
+        <li><a href="/">Início</a></li>
+        <li><a href="/quem-somos.html">Quem Somos</a></li>
+        <li><a href="/projetos.html">Projetos</a></li>
+        <li><a href="/servicos.html">Serviços</a></li>
+        <li><a class="active" href="/contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="container">
-      <div class="top-banner banner-contato">
-        <div class="background-blue">
-          <p>Para sanar dúvidas, obter informações, orçamentos ou nos fazer uma sujestão</p>
-          <h3>Entre em contato conosco</h3>
-          <div class="box-banner">
-            <i class="box-green"></i>
-            <i class="box-gray"></i>
-          </div>
+  <section class="container">
+    <div class="top-banner banner-contato">
+      <div class="background-blue">
+        <p>Para sanar dúvidas, obter informações, orçamentos ou nos fazer uma sujestão</p>
+        <h3>Entre em contato conosco</h3>
+        <div class="box-banner">
+          <i class="box-green"></i>
+          <i class="box-gray"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact">
+      <div>
+        <img alt="E-mail" src="./src/img/email.png">
+        <h2>E-mail</h2>
+        <p>Tem alguma dúvida?</p>
+        <span>comercial@gnflorestal.com.br</span>
+      </div>
+      <div>
+        <img alt="Telefone" src="./src/img/telefone.png">
+        <h2>Telefone</h2>
+        <p>Você também pode<br />ligar pra gente</p>
+        <span>(99) 3504-1790</span>
+      </div>
+      <div>
+        <img alt="WhatsApp" src="./src/img/whatsapp.png">
+        <h2>WhatsApp</h2>
+        <p>Converse conosco<br />pelo WhatsApp</p>
+        <span>(99) 99999-9999</span>
+      </div>
+    </div>
+    <div class="suggestions">
+      <div>
+        <h2>Insira ao lado seus
+          dados e entraremos
+          em contato</h2>
+        <p>Você pode nos ajudar a melhorar deixando
+          também sua opinião ou uma sugestão</p>
+      </div>
+      <form onsubmit="contact(event)" method="post">
+        <h3>Nos envie uma mensagem</h3>
+        <label for="inputName"></label>
+        <input name="name" id="inputName" type="text" placeholder="Seu nome">
+        <div class="input-box">
+          <input name="phoneNumber" type="tel" placeholder="Telefone">
+          <input name="email" type="email" placeholder="E-mail">
+
+        </div>
+        <input name="subject" type="text" placeholder="Assunto">
+        <textarea name="message" placeholder="Mensagem"></textarea>
+        <div class="input-box2">
+          <button type="submit"><img alt="paper-plane" src="./src/img/paper-plane.png"> Enviar</button>
+          <p class="errors"></p>
+        </div>
+      </form>
+    </div>
+    <div class="localization-map">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d625.4398847622186!2d-47.488328889463155!3d-5.523130356531705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92c55f9084d72ef1%3A0x8df7b04942147a2c!2sGN%20EMPREENDIMENTOS%20FLORESTAIS%20EIRELI!5e0!3m2!1spt-BR!2sbr!4v1663267200449!5m2!1spt-BR!2sbr"
+          width="100%" height="757" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="address">
+          <h2>Onde nos encontrar</h2>
+          <p>Rua Amazonas, n° 478,<br />
+            Bairro Nova Imperatriz<br />
+            Imperatriz-MA</p>
+          <button><i class="fa fa-map-marker-alt fa-2x"></i> Chegue até nós</button>
         </div>
       </div>
 
-      <div class="contact">
-        <div>
-          <img alt="E-mail" src="./src/img/email.png">
-          <h2>E-mail</h2>
-          <p>Tem alguma dúvida?</p>
-          <span>comercial@gnflorestal.com.br</span>
-        </div>
-        <div>
-          <img alt="Telefone" src="./src/img/telefone.png">
-          <h2>Telefone</h2>
-          <p>Você também pode<br />ligar pra gente</p>
-          <span>(99) 3504-1790</span>
-        </div>
-        <div>
-          <img alt="WhatsApp" src="./src/img/whatsapp.png">
-          <h2>WhatsApp</h2>
-          <p>Converse conosco<br />pelo WhatsApp</p>
-          <span>(99) 99999-9999</span>
-        </div>
-      </div>
-      <div class="suggestions">
-        <div>
-          <h2>Insira ao lado seus
-            dados e entraremos
-            em contato</h2>
-          <p>Você pode nos ajudar a melhorar deixando
-            também sua opinião ou uma sugestão</p>
-        </div>
-        <form onsubmit="contact(event)" method="post">
-          <h3>Nos envie uma mensagem</h3>
-          <label for="inputName"></label>
-          <input name="name" id="inputName" type="text" placeholder="Seu nome">
-          <div class="input-box">
-            <input name="phoneNumber" type="tel" placeholder="Telefone">
-            <input name="email" type="email" placeholder="E-mail">
+    </div>
 
-          </div>
-          <input name="subject" type="text" placeholder="Assunto">
-          <textarea name="message" placeholder="Mensagem"></textarea>
-          <div class="input-box2">
-            <button type="submit"><img alt="paper-plane" src="./src/img/paper-plane.png"> Enviar</button>
-            <p class="errors"></p>
-          </div>
-        </form>
-      </div>
-      </div>
-      <div class="localization-map">
-        <div class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d625.4398847622186!2d-47.488328889463155!3d-5.523130356531705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92c55f9084d72ef1%3A0x8df7b04942147a2c!2sGN%20EMPREENDIMENTOS%20FLORESTAIS%20EIRELI!5e0!3m2!1spt-BR!2sbr!4v1663267200449!5m2!1spt-BR!2sbr"
-            width="100%" height="757" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-          <div class="address">
-            <h2>Onde nos encontrar</h2>
-            <p>Rua Amazonas, n° 478,<br />
-              Bairro Nova Imperatriz<br />
-              Imperatriz-MA</p>
-            <button><i class="fa fa-map-marker-alt fa-2x"></i> Chegue até nós</button>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="social-media">
-        <img alt="SmartPhone" src="./src/img/Social-Midea-GL-Holding.png">
-        <div>
-          <p>Conheça mais sobre a <b>GL Holding</b> nos seguindo
-            nas <b>redes sociais</b></p>
-          <div>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <footer class="footer">
-      <div class="container-logo">
-        <img class="logo" alt="Logo GL Holding" src="./src/img/GLH-logo-h 1.svg" />
-        <div class="menu-footer">
-          <h3>Início</h3>
-          <a href="/">Página Inicial</a>
-          <a href="/contato.html">Contato</a>
-          <a href="/parceiros.html">Parceiros</a>
-          <a href="/blog.html">Blog</a>
-        </div>
-        <div class="menu-footer">
-          <h3>Sobre Nós</h3>
-          <a href="/quem-somos.html">Quem somos</a>
-          <a href="/projetos.html">Projetos</a>
-          <a href="/servicos.html">Serviços</a>
-        </div>
-        <div class="menu-footer">
-          <h3>Contatos</h3>
-          <div>
-            <i class="fa fa-phone fa-2x"></i>
-            <p>(99) 3504-1790</p>
-          </div>
-          <div>
-            <i class="fa fa-envelope fa-2x"></i>
-            <p>comercial@gnflorestal.com.br</p>
-          </div>
-          <div>
-            <i class="fa fa-map-marker-alt fa-2x"></i>
-            <p>
-              Matriz: Rua Amazonas, 478<br />
-              Bairro Nova Imperatriz<br />
-              Imperatriz - MA
-            </p>
-          </div>
-        </div>
-        <div class="email">
-          <h3>Deixe um contato</h3>
-          <div>
-            <input type="email" placeholder="Seu e-mail aqui" />
-            <button>Enviar</button>
-          </div>
-        </div>
-      </div>
-      <div class="container-politics">
-        <p>Direitos Reservados © 2022 Grupo GL Holding</p>
+    <div class="social-media">
+      <img alt="SmartPhone" src="./src/img/Social-Midea-GL-Holding.png">
+      <div>
+        <p>Conheça mais sobre a <b>GL Holding</b> nos seguindo
+          nas <b>redes sociais</b></p>
         <div>
           <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
           <a href="#"><i class="fa-brands fa-instagram"></i></a>
           <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="#"><i class="fa-brands fa-twitter"></i></a>
         </div>
-        <p>Termos e Serviços</p>
-        <p>Política de Privacidade</p>
       </div>
-    </footer>
-    <script src="./src/js/script-submit.js"></script>
-  </body>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="container-logo">
+      <img class="logo" alt="Logo GL Holding" src="./src/img/GLH-logo-h1.svg" />
+      <div class="menu-footer">
+        <h3>Início</h3>
+        <a href="/">Página Inicial</a>
+        <a href="/contato.html">Contato</a>
+        <a href="/parceiros.html">Parceiros</a>
+        <a href="/blog.html">Blog</a>
+      </div>
+      <div class="menu-footer">
+        <h3>Sobre Nós</h3>
+        <a href="/quem-somos.html">Quem somos</a>
+        <a href="/projetos.html">Projetos</a>
+        <a href="/servicos.html">Serviços</a>
+      </div>
+      <div class="menu-footer">
+        <h3>Contatos</h3>
+        <div>
+          <i class="fa fa-phone fa-2x"></i>
+          <p>(99) 3504-1790</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope fa-2x"></i>
+          <p>comercial@gnflorestal.com.br</p>
+        </div>
+        <div>
+          <i class="fa fa-map-marker-alt fa-2x"></i>
+          <p>
+            Matriz: Rua Amazonas, 478<br />
+            Bairro Nova Imperatriz<br />
+            Imperatriz - MA
+          </p>
+        </div>
+      </div>
+      <div class="email">
+        <form onsubmit="contactEmail(event)" method="post">
+          <h3>Deixe um contato</h3>
+          <div>
+            <input type="email" placeholder="Seu e-mail aqui" />
+            <button type="submit">Enviar</button>
+          </div>
+          <p class="email-error"></p>
+        </form>
+      </div>
+    </div>
+    <div class="container-politics">
+      <p>Direitos Reservados © 2022 Grupo GL Holding</p>
+      <div>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <p>Termos e Serviços</p>
+      <p>Política de Privacidade</p>
+    </div>
+  </footer>
+  <script src="./src/js/script-submit.js"></script>
+</body>
 
 </html>
